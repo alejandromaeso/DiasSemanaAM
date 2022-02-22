@@ -9,7 +9,7 @@ public class DiasSemana {
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
 			int numeroDia;
-			String seleccion = null;
+			//String seleccion = null;
 // Solicitud de datos al usuario
 			System.out.println("El programa te devuelve el día de la semana seleccionando:");
 			System.out.println("1.- Lunes.");
@@ -30,7 +30,7 @@ public class DiasSemana {
 	/**
 	 * @param numeroDia
 	 */
-	private static void decisionDia(int numeroDia) {
+	public static void decisionDia(int numeroDia) {
 		String seleccion;
 		switch (numeroDia) {
 		case 1:
