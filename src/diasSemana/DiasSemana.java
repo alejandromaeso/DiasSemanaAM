@@ -2,6 +2,13 @@ package diasSemana;
 
 import java.util.Scanner;
 
+
+
+/**
+ * @author Alejandrico
+ * @version 1.0
+ */
+
 //Inicio del programa y declaración de variables:
 
 public class DiasSemana {
@@ -28,7 +35,9 @@ public class DiasSemana {
 	}
 
 	/**
-	 * @param numeroDia
+	 * @param numeroDia parametro que utilizara el usuario para elegir el dia de la semana
+	 * que quiere saber cual es
+	 * 
 	 */
 	public static void decisionDia(int numeroDia) {
 		String seleccion;
