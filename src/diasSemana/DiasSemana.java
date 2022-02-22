@@ -8,8 +8,8 @@ public class DiasSemana {
 
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
-			int n;
-			String s = null;
+			int numeroDia;
+			String seleccion = null;
 // Solicitud de datos al usuario
 			System.out.println("El programa te devuelve el día de la semana seleccionando:");
 			System.out.println("1.- Lunes.");
@@ -21,34 +21,42 @@ public class DiasSemana {
 			System.out.println("7.- Domingo.");
 			System.out.println("_____________________________________________________________");
 			System.out.print("Dime un número y te digo a qué día de la semana corresponde: ");
-			n = scanner.nextInt();
+			numeroDia = scanner.nextInt();
 // Realizamos comparaciones y mostramos el resultado
-			switch (n) {
-			case 1:
-				s = "El día seleccionado es LUNES";
-				break;
-			case 2:
-				s = "El día seleccionado es MARTES";
-				break;
-			case 3:
-				s = "El día seleccionado es MIÉRCOLES";
-				break;
-			case 4:
-				s = "El día seleccionado es JUEVES";
-				break;
-			case 5:
-				s = "El día seleccionado es VIERNES";
-				break;
-			case 6:
-				s = "El día seleccionado es SÁBADO";
-				break;
-			case 7:
-				s = "El día seleccionado es DOMINGO";
-				break;
-			default:
-				s = "ERROR: número incorrecto.";
-			}
-			System.out.println(s);
+			decisionDia(numeroDia);
 		}
+	}
+
+	/**
+	 * @param numeroDia
+	 */
+	private static void decisionDia(int numeroDia) {
+		String seleccion;
+		switch (numeroDia) {
+		case 1:
+			seleccion = "El día seleccionado es LUNES";
+			break;
+		case 2:
+			seleccion = "El día seleccionado es MARTES";
+			break;
+		case 3:
+			seleccion = "El día seleccionado es MIÉRCOLES";
+			break;
+		case 4:
+			seleccion = "El día seleccionado es JUEVES";
+			break;
+		case 5:
+			seleccion = "El día seleccionado es VIERNES";
+			break;
+		case 6:
+			seleccion = "El día seleccionado es SÁBADO";
+			break;
+		case 7:
+			seleccion = "El día seleccionado es DOMINGO";
+			break;
+		default:
+			seleccion = "ERROR: número incorrecto.";
+		}
+		System.out.println(seleccion);
 	}
 }
